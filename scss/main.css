@@ -1,0 +1,550 @@
+/* GENERAL PAGE STYLES */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-family: "Electrolize", sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+body {
+  background-color: #121212;
+  color: #f4f5f6;
+  line-height: 1.4;
+}
+
+footer {
+  text-align: center;
+  border-top: 0.1rem solid #f4f5f6;
+}
+footer p {
+  padding: 1rem 0;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+header {
+  width: 100%;
+  height: auto;
+  z-index: 10;
+  background-color: #121212;
+}
+header nav {
+  width: 100%;
+  display: flex;
+  padding: 0.6rem 1.8rem;
+  justify-content: space-between;
+  border-bottom: 1px solid #f4f5f6;
+}
+header nav .nav-item {
+  padding-top: 1rem;
+  font-size: 1.1rem;
+}
+
+.section--name {
+  height: 100vh;
+  padding-top: 9rem;
+  text-align: center;
+  border-bottom: 1px solid #f4f5f6;
+}
+.section--name .name_container {
+  margin-bottom: 6rem;
+}
+.section--name .name_container .name h1 {
+  color: #993300;
+  padding-bottom: 0.6rem;
+}
+.section--name .arrow_container img {
+  height: auto;
+  padding-bottom: 1rem;
+  text-align: center;
+}
+.section--name .arrow_container p {
+  color: #993300;
+}
+
+.section--about {
+  height: auto;
+  border-bottom: 1px solid #f4f5f6;
+  padding: 2rem;
+}
+.section--about .section--about-xijindu img {
+  border-radius: 50%;
+}
+.section--about .section--about-xijindu h2 {
+  color: #993300;
+  font-size: 2rem;
+}
+.section--about .section--about-xijindu p {
+  font-size: 1.2rem;
+  padding-bottom: 0.9rem;
+}
+.section--about .section--about-xijindu button {
+  font-family: "Electrolize";
+  background-color: #f4f5f6;
+  color: #993300;
+  text-transform: uppercase;
+  font-weight: bold;
+  letter-spacing: 0.1rem;
+  padding: 0.9rem 0.6rem;
+  border: none;
+  transition: all 200ms ease-in-out;
+}
+.section--about .section--about-xijindu button:hover {
+  background-color: #993300;
+  color: #f4f5f6;
+}
+
+.section--projects {
+  padding: 2rem 0;
+}
+.section--projects h2 {
+  color: #993300;
+  font-size: 2.4rem;
+  padding-bottom: 2rem;
+  text-align: center;
+  text-decoration: underline;
+}
+.section--projects .section--projects-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.8rem;
+  justify-content: center;
+}
+.section--projects .section--projects-container div {
+  padding-bottom: 1rem;
+}
+.section--projects .section--projects-container div a img {
+  max-width: 100%;
+}
+.section--projects .section--projects-container div a p {
+  background-color: #993300;
+  color: #f4f5f6;
+  padding: 1rem 2rem;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+.section--projects .section--projects-container div a:hover img {
+  opacity: 0.6;
+}
+.section--projects .section--projects-container div a:hover p {
+  background-color: #f4f5f6;
+  color: #993300;
+}
+.section--projects .section--projects-view_all {
+  text-align: center;
+  margin: 2rem 0;
+}
+.section--projects .section--projects-view_all button {
+  font-family: "Electrolize";
+  background-color: #f4f5f6;
+  color: #993300;
+  text-transform: uppercase;
+  font-weight: bold;
+  letter-spacing: 0.1rem;
+  padding: 0.9rem 0.6rem;
+  border: none;
+  transition: all 200ms ease-in-out;
+}
+.section--projects .section--projects-view_all button:hover {
+  background-color: #993300;
+  color: #f4f5f6;
+}
+.section--projects .section--projects-work_across_web {
+  padding: 1rem;
+}
+.section--projects .section--projects-work_across_web h3 {
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  color: #993300;
+  padding-bottom: 1rem;
+}
+.section--projects .section--projects-work_across_web div {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+.section--projects .section--projects-work_across_web div a p {
+  color: #993300;
+  text-decoration: underline;
+}
+.section--projects .section--projects-work_across_web div a:hover img {
+  opacity: 0.6;
+}
+.section--projects .section--projects-work_across_web div a:hover p {
+  color: #f4f5f6;
+}
+
+.section--contact {
+  padding: 2rem 1rem;
+}
+.section--contact h2 {
+  text-transform: uppercase;
+  font-size: 1.2rem;
+  color: #993300;
+  padding-bottom: 0.6rem;
+}
+.section--contact h3 {
+  font-size: 0.9rem;
+  padding-bottom: 1rem;
+}
+.section--contact .section--contact-container .section--contact-email {
+  padding-bottom: 1rem;
+}
+.section--contact .section--contact-container .section--contact-email .email {
+  text-transform: uppercase;
+  opacity: 0.5;
+  padding-bottom: 0.6rem;
+}
+.section--contact .section--contact-container .section--contact-email .email_link {
+  display: flex;
+  color: #993300;
+}
+.section--contact .section--contact-container .section--contact-email .email_link p {
+  text-decoration: underline;
+}
+.section--contact .section--contact-container .section--contact-phone {
+  text-transform: uppercase;
+}
+.section--contact .section--contact-container .section--contact-phone .phone {
+  opacity: 0.5;
+  padding-bottom: 0.6rem;
+}
+.section--contact .section--contact-container .section--contact-phone .phone_link {
+  display: flex;
+  color: #993300;
+}
+
+@media only screen and (max-width: 600px) {
+  .section--name .name_container .name h1 {
+    font-size: 4rem;
+  }
+
+  .section--about .section--about-xijindu {
+    margin-bottom: 3rem;
+    text-align: center;
+  }
+
+  .section--about-description h2 {
+    color: #993300;
+    font-size: 2.4rem;
+    padding-bottom: 1rem;
+  }
+  .section--about-description p {
+    font-size: 1.1rem;
+    padding-bottom: 1rem;
+  }
+  .section--about-description p span {
+    color: #993300;
+  }
+
+  .section--about-tech_stack {
+    margin-top: 1rem;
+  }
+  .section--about-tech_stack h2 {
+    font-size: 2.1rem;
+  }
+  .section--about-tech_stack .tech_stack--icons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    padding-bottom: 1rem;
+    text-transform: capitalize;
+  }
+
+  .section--projects h2 {
+    font-size: 2rem;
+  }
+  .section--projects .section--projects-work_across_web {
+    padding: 1rem;
+  }
+
+  .section--contact-container {
+    display: grid;
+  }
+  .section--contact-container .section--contact-email .email {
+    text-transform: uppercase;
+    opacity: 0.5;
+  }
+  .section--contact-container .section--contact-email a {
+    text-decoration: underline;
+  }
+}
+@media only screen and (min-width: 500px) {
+  .section--contact .section--contact-container {
+    display: flex;
+    gap: 3rem;
+  }
+}
+@media only screen and (min-width: 600px) {
+  .section--name {
+    padding-top: 7rem;
+  }
+  .section--name .name_container .name h1 {
+    font-size: 6rem;
+  }
+
+  .section--about .section--about-xijindu {
+    margin-bottom: 3rem;
+    text-align: center;
+  }
+  .section--about .section--about-xijindu button {
+    font-family: "Electrolize";
+    background-color: #f4f5f6;
+    color: #993300;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 0.1rem;
+    padding: 0.9rem 0.6rem;
+    border: none;
+    transition: all 200ms ease-in-out;
+  }
+  .section--about .section--about-xijindu button:hover {
+    background-color: #993300;
+    color: #f4f5f6;
+  }
+
+  .section--about-description h2 {
+    color: #993300;
+    font-size: 3rem;
+    padding-bottom: 1rem;
+  }
+  .section--about-description p {
+    font-size: 1.2rem;
+    padding-bottom: 1rem;
+  }
+  .section--about-description p span {
+    color: #993300;
+  }
+
+  .section--about-tech_stack {
+    margin-top: 1rem;
+  }
+  .section--about-tech_stack h2 {
+    font-size: 2.4rem;
+  }
+  .section--about-tech_stack .tech_stack--icons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    padding-bottom: 1rem;
+    text-transform: capitalize;
+  }
+
+  .section--projects .section--projects-work_across_web {
+    padding: 3rem;
+  }
+
+  .section--contact {
+    padding: 3rem;
+  }
+}
+@media only screen and (min-width: 768px) {
+  .section--name {
+    padding-top: 7rem;
+  }
+  .section--name .name_container .name h1 {
+    font-size: 7rem;
+  }
+
+  .section--about {
+    padding: 3rem;
+  }
+  .section--about .section--about-xijindu {
+    margin-bottom: 3rem;
+    text-align: center;
+  }
+  .section--about .section--about-xijindu button {
+    font-family: "Electrolize";
+    background-color: #f4f5f6;
+    color: #993300;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 0.1rem;
+    padding: 0.9rem 0.6rem;
+    border: none;
+    transition: all 200ms ease-in-out;
+  }
+  .section--about .section--about-xijindu button:hover {
+    background-color: #993300;
+    color: #f4f5f6;
+  }
+
+  .section--about-description h2 {
+    color: #993300;
+    font-size: 2.4rem;
+    padding-bottom: 1rem;
+  }
+  .section--about-description p {
+    font-size: 1.2rem;
+    padding-bottom: 1rem;
+  }
+  .section--about-description p span {
+    color: #993300;
+  }
+
+  .section--about-tech_stack {
+    margin-top: 1rem;
+  }
+  .section--about-tech_stack h2 {
+    font-size: 2rem;
+  }
+  .section--about-tech_stack .tech_stack--icons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    padding-bottom: 1rem;
+    text-transform: capitalize;
+  }
+
+  .section--projects .section--projects-work_across_web {
+    padding: 3rem;
+  }
+}
+@media only screen and (min-width: 992px) {
+  .section--name {
+    padding-top: 4rem;
+  }
+  .section--name .name_container {
+    margin-bottom: 3rem;
+  }
+  .section--name .name_container .name h1 {
+    font-size: 8rem;
+  }
+
+  .section--about {
+    padding: 3rem;
+  }
+  .section--about .section--about-xijindu {
+    margin-bottom: 3rem;
+    text-align: center;
+  }
+  .section--about .section--about-xijindu button {
+    font-family: "Electrolize";
+    background-color: #f4f5f6;
+    color: #993300;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 0.1rem;
+    padding: 0.9rem 0.6rem;
+    border: none;
+    transition: all 200ms ease-in-out;
+  }
+  .section--about .section--about-xijindu button:hover {
+    background-color: #993300;
+    color: #f4f5f6;
+  }
+
+  .section--about-description h2 {
+    color: #993300;
+    font-size: 2.4rem;
+    padding-bottom: 1rem;
+  }
+  .section--about-description p {
+    font-size: 1.1rem;
+    padding-bottom: 1rem;
+  }
+  .section--about-description p span {
+    color: #993300;
+  }
+
+  .section--about-tech_stack {
+    margin-top: 1rem;
+  }
+  .section--about-tech_stack h2 {
+    font-size: 2rem;
+  }
+  .section--about-tech_stack .tech_stack--icons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    padding-bottom: 1rem;
+    text-transform: capitalize;
+  }
+
+  .section--projects .section--projects-work_across_web {
+    padding: 3rem;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .section--name {
+    padding-top: 2rem;
+  }
+  .section--name .name_container {
+    margin-bottom: 3rem;
+  }
+  .section--name .name_container .name h1 {
+    font-size: 9rem;
+  }
+
+  .section--about {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-gap: 3rem;
+    padding: 6rem 3rem;
+  }
+  .section--about .section--about-xijindu {
+    margin-bottom: 3rem;
+    text-align: center;
+  }
+  .section--about .section--about-xijindu button {
+    font-family: "Electrolize";
+    background-color: #f4f5f6;
+    color: #993300;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 0.1rem;
+    padding: 0.9rem 0.6rem;
+    border: none;
+    transition: all 200ms ease-in-out;
+  }
+  .section--about .section--about-xijindu button:hover {
+    background-color: #993300;
+    color: #f4f5f6;
+  }
+
+  .section--about-description h2 {
+    color: #993300;
+    font-size: 2.4rem;
+    padding-bottom: 1rem;
+  }
+  .section--about-description p {
+    font-size: 1.1rem;
+    padding-bottom: 1rem;
+  }
+  .section--about-description p span {
+    color: #993300;
+  }
+
+  .section--about-tech_stack {
+    margin-top: 1rem;
+  }
+  .section--about-tech_stack h2 {
+    font-size: 2rem;
+  }
+  .section--about-tech_stack .tech_stack--icons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    padding-bottom: 1rem;
+    text-transform: capitalize;
+  }
+
+  .section--projects .section--projects-work_across_web {
+    padding: 3rem;
+  }
+}
+
+/*# sourceMappingURL=main.css.map */

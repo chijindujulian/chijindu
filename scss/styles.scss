@@ -1,0 +1,702 @@
+/* GENERAL PAGE STYLES */
+
+$primary-color: #121212;
+$accent-color: #993300;
+$light-color: #f4f5f6;
+
+@mixin button {
+    font-family: 'Electrolize';
+    background-color: $light-color;
+    color: $accent-color;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 0.1rem;
+    padding: 0.9rem 0.6rem;
+    border: none;
+    transition: all 200ms ease-in-out;
+
+    &:hover {
+        background-color: $accent-color;
+        color: $light-color;
+    }
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+    font-family: 'Electrolize', sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+body {
+    background-color: $primary-color;
+    color: $light-color;
+    line-height: 1.4;
+}
+
+footer {
+    text-align: center;
+    border-top: 0.1rem solid $light-color;
+
+    p {
+        padding: 1rem 0;
+    }
+}
+
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%
+}
+
+header {
+    width: 100%;
+    height: auto;
+    z-index: 10;
+    background-color: $primary-color;
+
+    nav {
+        width: 100%;
+        display: flex;
+        padding: 0.6rem 1.8rem;
+        justify-content: space-between;
+        border-bottom: 1px solid $light-color;
+
+        .nav-item {
+            padding-top: 1rem;
+            font-size: 1.1rem;
+        }
+    }
+}
+
+.section--name {
+    height: 100vh;
+    padding-top: 9rem;
+    text-align: center;
+    border-bottom: 1px solid $light-color;
+
+    .name_container {
+
+        margin-bottom: 6rem;
+
+        .name {
+
+            h1 {
+                color: $accent-color;
+                padding-bottom: 0.6rem;
+            }
+        }
+    }
+
+    .arrow_container {
+
+        img {
+            height: auto;
+            padding-bottom: 1rem;
+            text-align: center;
+        }
+
+        p {
+            color: $accent-color;
+        }
+    }
+}
+
+.section--about {
+    height: auto;
+    border-bottom: 1px solid $light-color;
+    padding: 2rem;
+
+    .section--about-xijindu {
+
+        img {
+            border-radius: 50%;
+        }
+
+        h2 {
+            color: $accent-color;
+            font-size: 2rem;
+        }
+
+        p {
+            font-size: 1.2rem;
+            padding-bottom: 0.9rem;
+        }
+
+        button {
+            @include button();
+        }
+    }
+}
+
+.section--projects {
+
+    padding: 2rem 0;
+
+    h2 {
+        color: $accent-color;
+        font-size: 2.4rem;
+        padding-bottom: 2rem;
+        text-align: center;
+        text-decoration: underline;
+    }
+
+    .section--projects-container {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1.8rem;
+        justify-content: center;
+
+        div {
+
+            padding-bottom: 1rem;
+
+            a {
+
+                img {
+                    max-width: 100%;
+                }
+
+                p {
+                    background-color: $accent-color;
+                    color: $light-color;
+                    padding: 1rem 2rem;
+                    text-transform: uppercase;
+                    font-weight: bold;
+                }
+
+                &:hover {
+
+                    img {
+                        opacity: 0.6;
+                    }
+
+                    p {
+                        background-color: $light-color;
+                        color: $accent-color;
+                    }
+                }
+            }
+
+        }
+    }
+
+    .section--projects-view_all {
+        text-align: center;
+        margin: 2rem 0;
+
+        button {
+            @include button();
+        }
+    }
+
+    .section--projects-work_across_web {
+
+        padding: 1rem;
+
+        h3 {
+            font-size: 0.9rem;
+            text-transform: uppercase;
+            color: $accent-color;
+            padding-bottom: 1rem;
+        }
+
+        div {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1rem;
+
+            a {
+                p {
+                    color: $accent-color;
+                    text-decoration: underline;
+                }
+
+                &:hover {
+
+                    img {
+                        opacity: 0.6;
+                    }
+
+                    p {
+                        color: $light-color;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.section--contact {
+
+    padding: 2rem 1rem;
+
+    h2 {
+        text-transform: uppercase;
+        font-size: 1.2rem;
+        color: $accent-color;
+        padding-bottom: 0.6rem;
+    }
+
+    h3 {
+        font-size: 0.9rem;
+        padding-bottom: 1rem;
+    }
+
+    .section--contact-container {
+
+        .section--contact-email {
+            padding-bottom: 1rem;
+            .email {
+                text-transform: uppercase;
+                opacity: 0.5;
+                padding-bottom: 0.6rem;
+            }
+
+            .email_link {
+                display: flex;
+                color: $accent-color;
+
+                p {
+                    text-decoration: underline;
+                }
+            }
+
+        }
+
+        .section--contact-phone {
+
+            text-transform: uppercase;
+
+            .phone {
+                opacity: 0.5;
+                padding-bottom: 0.6rem;
+            }
+
+            .phone_link {
+                display: flex;
+                color: $accent-color;
+            }
+        }
+    }
+
+}
+
+
+@media only screen and (max-width: 600px) {
+
+    .section--name {
+
+        .name_container {
+            .name {
+
+                h1 {
+                    font-size: 4rem;
+                }
+            }
+        }
+    }
+
+    .section--about {
+
+        .section--about-xijindu {
+            margin-bottom: 3rem;
+            text-align: center;
+        }
+    }
+
+    .section--about-description {
+
+        h2 {
+            color: $accent-color;
+            font-size: 2.4rem;
+            padding-bottom: 1rem;
+        }
+
+        p {
+            font-size: 1.1rem;
+            padding-bottom: 1rem;
+
+            span {
+                color: $accent-color;
+            }
+        }
+    }
+
+    .section--about-tech_stack {
+        margin-top: 1rem;
+
+        h2 {
+            font-size: 2.1rem;
+        }
+
+        .tech_stack--icons {
+
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1.5rem;
+            padding-bottom: 1rem;
+            text-transform: capitalize;
+
+        }
+    }
+
+
+    .section--projects {
+
+        h2 {
+            font-size: 2rem;
+        }
+
+        .section--projects-work_across_web {
+
+            padding: 1rem;
+        }
+    }
+
+    .section--contact-container {
+        display: grid;
+
+        .section--contact-email {
+
+            .email {
+                text-transform: uppercase;
+                opacity: 0.5;
+            }
+
+            a {
+                text-decoration: underline;
+            }
+        }
+    }
+
+}
+
+@media only screen and (min-width: 500px) {
+    
+    .section--contact {
+        .section--contact-container {
+            display: flex;
+            gap: 3rem;
+        }
+    }
+}
+
+@media only screen and (min-width: 600px) {
+
+    .section--name {
+
+        padding-top: 7rem;
+
+        .name_container {
+            .name {
+
+                h1 {
+                    font-size: 6rem;
+                }
+            }
+        }
+    }
+
+    .section--about {
+
+        .section--about-xijindu {
+            margin-bottom: 3rem;
+            text-align: center;
+
+            button {
+                @include button();
+            }
+        }
+    }
+
+    .section--about-description {
+
+        h2 {
+            color: $accent-color;
+            font-size: 3rem;
+            padding-bottom: 1rem;
+        }
+
+        p {
+            font-size: 1.2rem;
+            padding-bottom: 1rem;
+
+            span {
+                color: $accent-color;
+            }
+        }
+    }
+
+    .section--about-tech_stack {
+        margin-top: 1rem;
+
+        h2 {
+            font-size: 2.4rem;
+        }
+
+        .tech_stack--icons {
+
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1.5rem;
+            padding-bottom: 1rem;
+            text-transform: capitalize;
+        }
+    }
+
+    .section--projects {
+
+        .section--projects-work_across_web {
+
+            padding: 3rem;
+        }
+    }
+
+    .section--contact {
+        padding: 3rem;
+    }
+}
+
+
+@media only screen and (min-width: 768px) {
+    .section--name {
+
+        padding-top: 7rem;
+
+        .name_container {
+
+            .name {
+
+                h1 {
+                    font-size: 7rem;
+                }
+            }
+        }
+    }
+
+    .section--about {
+
+        padding: 3rem;
+
+        .section--about-xijindu {
+            margin-bottom: 3rem;
+            text-align: center;
+
+            button {
+                @include button();
+            }
+        }
+    }
+
+    .section--about-description {
+
+        h2 {
+            color: $accent-color;
+            font-size: 2.4rem;
+            padding-bottom: 1rem;
+        }
+
+        p {
+            font-size: 1.2rem;
+            padding-bottom: 1rem;
+
+            span {
+                color: $accent-color;
+            }
+        }
+    }
+
+    .section--about-tech_stack {
+        margin-top: 1rem;
+
+        h2 {
+            font-size: 2rem;
+        }
+
+        .tech_stack--icons {
+
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1.5rem;
+            padding-bottom: 1rem;
+            text-transform: capitalize;
+
+        }
+    }
+
+    .section--projects {
+
+        .section--projects-work_across_web {
+
+            padding: 3rem;
+        }
+    }
+}
+
+@media only screen and (min-width: 992px) {
+    .section--name {
+
+        padding-top: 4rem;
+
+        .name_container {
+
+            margin-bottom: 3rem;
+
+            .name {
+
+                h1 {
+                    font-size: 8rem;
+                }
+            }
+        }
+    }
+
+    .section--about {
+
+        padding: 3rem;
+
+        .section--about-xijindu {
+            margin-bottom: 3rem;
+            text-align: center;
+
+            button {
+                @include button();
+            }
+        }
+    }
+
+    .section--about-description {
+
+        h2 {
+            color: $accent-color;
+            font-size: 2.4rem;
+            padding-bottom: 1rem;
+        }
+
+        p {
+            font-size: 1.1rem;
+            padding-bottom: 1rem;
+
+            span {
+                color: $accent-color;
+            }
+        }
+    }
+
+    .section--about-tech_stack {
+        margin-top: 1rem;
+
+        h2 {
+            font-size: 2rem;
+        }
+
+        .tech_stack--icons {
+
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1.5rem;
+            padding-bottom: 1rem;
+            text-transform: capitalize;
+
+        }
+    }
+
+    .section--projects {
+
+        .section--projects-work_across_web {
+
+            padding: 3rem;
+        }
+    }
+}
+
+@media only screen and (min-width:1200px) {
+    .section--name {
+
+        padding-top: 2rem;
+
+        .name_container {
+
+            margin-bottom: 3rem;
+
+            .name {
+
+                h1 {
+                    font-size: 9rem;
+                }
+
+            }
+        }
+    }
+
+    .section--about {
+
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        grid-gap: 3rem;
+        padding: 6rem 3rem;
+
+        .section--about-xijindu {
+            margin-bottom: 3rem;
+            text-align: center;
+
+            button {
+                @include button();
+            }
+        }
+    }
+
+    .section--about-description {
+
+        h2 {
+            color: $accent-color;
+            font-size: 2.4rem;
+            padding-bottom: 1rem;
+        }
+
+        p {
+            font-size: 1.1rem;
+            padding-bottom: 1rem;
+
+            span {
+                color: $accent-color;
+            }
+        }
+    }
+
+    .section--about-tech_stack {
+        margin-top: 1rem;
+
+        h2 {
+            font-size: 2rem;
+        }
+
+        .tech_stack--icons {
+
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1.5rem;
+            padding-bottom: 1rem;
+            text-transform: capitalize;
+
+        }
+    }
+
+    .section--projects {
+
+        .section--projects-work_across_web {
+
+            padding: 3rem;
+        }
+    }
+}

@@ -1,0 +1,12 @@
+{
+  "name": "xijindu",
+  "version": "1.0.0",
+  "description": "Portfolio site of Front-end Web Developer Chijindu Julian. Tech stack includes HTML5, CSS3, SASS, TailwindCSS, GSAP, JAVASCRIPT, Python, DJANGO.",
+  "main": "serviceworker.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
