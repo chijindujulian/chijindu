@@ -13,7 +13,7 @@ if ('serviceWorker' in navigator) {
 
 // EXECUTE SCROLL FUNCTION ON USER SCROLL
 window.onscroll = function() {
-	scrollFunction()
+	scrollFunction();
 };
 
 // GET HEADER
