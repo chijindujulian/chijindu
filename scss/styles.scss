@@ -44,6 +44,7 @@ body {
 }
 
 footer {
+    font-size: 0.8rem;
     text-align: center;
     border-top: 0.1rem solid $light-color;
 
@@ -74,6 +75,14 @@ header {
         .nav-item {
             padding-top: 1rem;
             font-size: 1.1rem;
+
+            a {
+                &:hover {
+                    text-decoration: underline;
+                    color: $accent-color;
+
+                }
+            }
         }
     }
 }
@@ -136,11 +145,32 @@ header {
             @include button();
         }
     }
+
+    .section--about-description {
+        
+        h2 {
+            text-decoration: underline;
+        }
+    }
+
+}
+
+.section--about-tech_stack {
+
+    .tech_stack--icons {
+
+        p {
+            color: $accent-color;
+            font-size: 1rem;
+            text-decoration: underline;
+        }
+    }
 }
 
 .section--projects {
 
     padding: 2rem 0;
+    border-bottom: 1px solid $light-color;
 
     h2 {
         color: $accent-color;
@@ -206,6 +236,7 @@ header {
         h3 {
             font-size: 0.9rem;
             text-transform: uppercase;
+            text-decoration: underline;
             color: $accent-color;
             padding-bottom: 1rem;
         }
@@ -242,6 +273,7 @@ header {
 
     h2 {
         text-transform: uppercase;
+        text-decoration: underline;
         font-size: 1.2rem;
         color: $accent-color;
         padding-bottom: 0.6rem;
@@ -296,6 +328,8 @@ header {
 
     .section--name {
 
+        padding-top: 6rem;
+
         .name_container {
             .name {
 
@@ -346,6 +380,12 @@ header {
             gap: 1.5rem;
             padding-bottom: 1rem;
             text-transform: capitalize;
+
+            p {
+                color: $accent-color;
+                font-size: 0.8rem;
+                text-decoration: underline;
+            }
 
         }
     }

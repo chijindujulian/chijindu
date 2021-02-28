@@ -22,6 +22,7 @@ body {
 }
 
 footer {
+  font-size: 0.8rem;
   text-align: center;
   border-top: 0.1rem solid #f4f5f6;
 }
@@ -51,6 +52,10 @@ header nav {
 header nav .nav-item {
   padding-top: 1rem;
   font-size: 1.1rem;
+}
+header nav .nav-item a:hover {
+  text-decoration: underline;
+  color: #993300;
 }
 
 .section--name {
@@ -106,9 +111,19 @@ header nav .nav-item {
   background-color: #993300;
   color: #f4f5f6;
 }
+.section--about .section--about-description h2 {
+  text-decoration: underline;
+}
+
+.section--about-tech_stack .tech_stack--icons p {
+  color: #993300;
+  font-size: 1rem;
+  text-decoration: underline;
+}
 
 .section--projects {
   padding: 2rem 0;
+  border-bottom: 1px solid #f4f5f6;
 }
 .section--projects h2 {
   color: #993300;
@@ -168,6 +183,7 @@ header nav .nav-item {
 .section--projects .section--projects-work_across_web h3 {
   font-size: 0.9rem;
   text-transform: uppercase;
+  text-decoration: underline;
   color: #993300;
   padding-bottom: 1rem;
 }
@@ -192,6 +208,7 @@ header nav .nav-item {
 }
 .section--contact h2 {
   text-transform: uppercase;
+  text-decoration: underline;
   font-size: 1.2rem;
   color: #993300;
   padding-bottom: 0.6rem;
@@ -228,6 +245,9 @@ header nav .nav-item {
 }
 
 @media only screen and (max-width: 600px) {
+  .section--name {
+    padding-top: 6rem;
+  }
   .section--name .name_container .name h1 {
     font-size: 4rem;
   }
@@ -262,6 +282,11 @@ header nav .nav-item {
     gap: 1.5rem;
     padding-bottom: 1rem;
     text-transform: capitalize;
+  }
+  .section--about-tech_stack .tech_stack--icons p {
+    color: #993300;
+    font-size: 0.8rem;
+    text-decoration: underline;
   }
 
   .section--projects h2 {
