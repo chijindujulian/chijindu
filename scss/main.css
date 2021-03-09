@@ -87,13 +87,14 @@ header nav .nav-item a:hover {
 }
 .section--about .section--about-xijindu img {
   border-radius: 50%;
+  margin-bottom: 1.8rem;
 }
 .section--about .section--about-xijindu h2 {
   color: #993300;
   font-size: 2rem;
 }
 .section--about .section--about-xijindu p {
-  font-size: 1.2rem;
+  font-size: 0.9rem;
   padding-bottom: 0.9rem;
 }
 .section--about .section--about-xijindu button {
@@ -102,7 +103,6 @@ header nav .nav-item a:hover {
   color: #993300;
   text-transform: uppercase;
   font-weight: bold;
-  letter-spacing: 0.1rem;
   padding: 0.9rem 0.6rem;
   border: none;
   transition: all 200ms ease-in-out;
@@ -114,7 +114,16 @@ header nav .nav-item a:hover {
 .section--about .section--about-description h2 {
   text-decoration: underline;
 }
+.section--about .section--about-description p {
+  font-size: 1rem;
+}
 
+.section--about-tech_stack {
+  padding-top: 1.8rem;
+}
+.section--about-tech_stack .tech_stack--icons {
+  opacity: 0.5;
+}
 .section--about-tech_stack .tech_stack--icons p {
   color: #993300;
   font-size: 1rem;
@@ -168,7 +177,6 @@ header nav .nav-item a:hover {
   color: #993300;
   text-transform: uppercase;
   font-weight: bold;
-  letter-spacing: 0.1rem;
   padding: 0.9rem 0.6rem;
   border: none;
   transition: all 200ms ease-in-out;
@@ -331,7 +339,6 @@ header nav .nav-item a:hover {
     color: #993300;
     text-transform: uppercase;
     font-weight: bold;
-    letter-spacing: 0.1rem;
     padding: 0.9rem 0.6rem;
     border: none;
     transition: all 200ms ease-in-out;
@@ -397,7 +404,6 @@ header nav .nav-item a:hover {
     color: #993300;
     text-transform: uppercase;
     font-weight: bold;
-    letter-spacing: 0.1rem;
     padding: 0.9rem 0.6rem;
     border: none;
     transition: all 200ms ease-in-out;
@@ -462,7 +468,6 @@ header nav .nav-item a:hover {
     color: #993300;
     text-transform: uppercase;
     font-weight: bold;
-    letter-spacing: 0.1rem;
     padding: 0.9rem 0.6rem;
     border: none;
     transition: all 200ms ease-in-out;
@@ -530,7 +535,6 @@ header nav .nav-item a:hover {
     color: #993300;
     text-transform: uppercase;
     font-weight: bold;
-    letter-spacing: 0.1rem;
     padding: 0.9rem 0.6rem;
     border: none;
     transition: all 200ms ease-in-out;

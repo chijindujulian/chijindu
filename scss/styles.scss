@@ -10,7 +10,6 @@ $light-color: #f4f5f6;
     color: $accent-color;
     text-transform: uppercase;
     font-weight: bold;
-    letter-spacing: 0.1rem;
     padding: 0.9rem 0.6rem;
     border: none;
     transition: all 200ms ease-in-out;
@@ -129,6 +128,7 @@ header {
 
         img {
             border-radius: 50%;
+            margin-bottom: 1.8rem;
         }
 
         h2 {
@@ -137,7 +137,7 @@ header {
         }
 
         p {
-            font-size: 1.2rem;
+            font-size: 0.9rem;
             padding-bottom: 0.9rem;
         }
 
@@ -151,13 +151,21 @@ header {
         h2 {
             text-decoration: underline;
         }
+
+        p {
+            font-size: 1rem;
+        }
     }
 
 }
 
 .section--about-tech_stack {
 
+    padding-top: 1.8rem;
+
     .tech_stack--icons {
+
+        opacity: 0.5;
 
         p {
             color: $accent-color;
