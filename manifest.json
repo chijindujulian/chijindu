@@ -1,7 +1,7 @@
 {
-  "name": "xijindu",
-  "short_name": "xijindu",
-  "description": "xijindu's developer + designer portfolio.",
+  "name": "chijindu",
+  "short_name": "chijindu",
+  "description": "chijindu's developer + designer portfolio.",
   "icons": [
     {
       "src": "/images/icons/144.png",
@@ -28,8 +28,8 @@
   ],
   "start_url": "https://xijindu.netlify.app/",
   "display": "standalone",
-  "background_color": "#121212",
-  "theme_color": "#DB4938",
+  "background_color": "#1E1E1C",
+  "theme_color": "#333",
   "scope": "https://xijindu.netlify.app/",
   "orientation": "portrait-primary"
 }

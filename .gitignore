@@ -1,2 +1,4 @@
 server.sh
-scss/styles.scss
+/scss/styles.scss
+/scss/main.css.map
+technical-debt.txt

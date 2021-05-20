@@ -8,36 +8,39 @@
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    inkscape:version="1.0 (4035a4fb49, 2020-05-01)"
-   sodipodi:docname="html5.svg"
-   id="svg10"
+   height="13.771791"
+   width="24"
+   sodipodi:docname="hamburger.svg"
+   id="svg16"
    version="1.1"
-   fill="none"
-   viewBox="0 0 32 34.999977"
-   height="34.999977"
-   width="32">
+   y="0px"
+   x="0px"
+   viewBox="0 0 24 13.771792">
   <metadata
-     id="metadata16">
+     id="metadata22">
     <rdf:RDF>
       <cc:Work
          rdf:about="">
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title>Artboard 1</dc:title>
       </cc:Work>
     </rdf:RDF>
   </metadata>
   <defs
-     id="defs14" />
+     id="defs20" />
   <sodipodi:namedview
-     inkscape:current-layer="svg10"
+     inkscape:current-layer="svg16"
      inkscape:window-maximized="1"
      inkscape:window-y="27"
      inkscape:window-x="0"
-     inkscape:cy="17.857178"
-     inkscape:cx="16"
-     inkscape:zoom="6.4305556"
+     inkscape:cy="15.602431"
+     inkscape:cx="13.552601"
+     inkscape:zoom="3.8583333"
+     showborder="false"
      showgrid="false"
-     id="namedview12"
+     id="namedview18"
      inkscape:window-height="671"
      inkscape:window-width="1366"
      inkscape:pageshadow="2"
@@ -47,25 +50,32 @@
      objecttolerance="10"
      borderopacity="1"
      bordercolor="#666666"
-     pagecolor="#ffffff" />
+     pagecolor="#111111"
+     inkscape:document-rotation="0" />
+  <title
+     id="title2">Artboard 1</title>
   <g
-     transform="matrix(1.0231291,0,0,1,0,-0.142822)"
-     id="g845">
-    <path
-       d="M 2.8449,31.6547 0,0.142822 H 31.2766 L 28.4317,31.6377 15.6124,35.1428"
-       fill="#e44d26"
-       id="path2" />
-    <path
-       d="M 15.6383,32.1641 V 2.37683 H 28.2978 L 25.882,29.3089"
-       fill="#f16529"
-       id="path4" />
-    <path
-       d="m 5.95752,6.10034 h 9.68088 v 3.94186 h -5.4519 l 0.3567,4.0374 h 5.0952 v 3.9333 H 7.01053 Z M 7.18037,19.9925 h 3.87233 l 0.2718,3.1519 4.3139,1.1807 v 4.1156 L 7.72386,26.1832"
-       fill="#ebebeb"
-       id="path6" />
-    <path
-       d="m 25.3192,6.10034 h -9.6809 v 3.94496 h 9.3236 z m -0.7061,7.98556 h -8.9748 v 3.945 h 4.7638 l -0.4507,5.1267 -4.3131,1.1818 v 4.1013 l 7.9114,-2.2419"
-       fill="#ffffff"
-       id="path8" />
+     id="g840">
+    <rect
+       x="0"
+       id="rect4"
+       height="1"
+       width="24"
+       y="0"
+       style="fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.5" />
+    <rect
+       x="0"
+       id="rect6"
+       height="1"
+       width="24"
+       y="6.3858957"
+       style="fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.5" />
+    <rect
+       style="fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.5"
+       y="12.771791"
+       width="24"
+       height="1"
+       id="rect835"
+       x="0" />
   </g>
 </svg>
