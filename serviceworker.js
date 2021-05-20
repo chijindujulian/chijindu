@@ -84,39 +84,27 @@ self.addEventListener("fetch", (event) => {
 });
 
 
-const xijindu = "xijindu-portfolio"
+const chijindu = "chijindu-portfolio"
 const assets = [
     "/",
     "index.html",
     "about.html",
-    "projects.html",
+    "work.html",
     "/scss/styles.css",
     "/scripts/script.js",
     "/images/circles.svg",
     "/images/cj.svg",
+    "/images/hamburgerx.svg",
     "/images/hox.svg",
     "/images/icon.svg",
-    "/images/django.svg",
-    "/images/down-arrow.svg",
-    "/images/email.svg",
-    "/images/figma.svg",
-    "/images/inkscape.svg",
-    "/images/instagr.svg",
-    "/images/javascript.svg",
-    "/images/python.svg",
-    "/images/sass.svg",
-    "/images/sequel.svg",
-    "/images/xi.svg",
-    "/images/drib.webp",
-    "/images/drib2.webp",
-    "/images/drib3.webp",
-    "/images/drib4.webp",
-    "/images/xijindu.webp",
+    "/images/chijindu1.webp",
+    "/images/sca.png",
+    "/images/waa.png",
 ]
 
 self.addEventListener("install", installEvent => {
     installEvent.waitUntil(
-        caches.open(xijindu).then(cache => {
+        caches.open(chijindu).then(cache => {
             cache.addAll(assets)
         })
     )
