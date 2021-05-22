@@ -99,6 +99,9 @@ p {
   color: #1E1E1C;
   border-color: #333;
 }
+.description .description--skills {
+  text-align: right;
+}
 .description .img,
 .description .circles {
   text-align: center;
