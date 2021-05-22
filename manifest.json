@@ -26,7 +26,7 @@
       "purpose": "any maskable"
     }
   ],
-  "start_url": "https://chijindujulian.netlify.app/",
+  "start_url": "https://chijindujulian.netlify.app/index.html",
   "display": "standalone",
   "background_color": "#111",
   "theme_color": "#333",
