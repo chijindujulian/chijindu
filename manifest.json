@@ -1,7 +1,7 @@
 {
   "name": "chijindu",
   "short_name": "chijindu",
-  "description": "chijindu's developer + designer portfolio.",
+  "description": "chijindu's full stack developer portfolio.",
   "icons": [
     {
       "src": "/images/icons/144.png",
@@ -29,7 +29,7 @@
   "start_url": "https://chijindujulian.netlify.app/index.html",
   "display": "standalone",
   "background_color": "#111",
-  "theme_color": "#333",
+  "theme_color": "#111",
   "scope": "https://chijindujulian.netlify.app/",
   "orientation": "portrait-primary"
 }

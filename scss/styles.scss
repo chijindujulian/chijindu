@@ -54,16 +54,16 @@ nav {
 
         .work,
         .me {
-            padding-right: 3rem;
+            padding-right: 2rem;
             font-weight: 700;
+
+            &:hover {
+                color: $accent-color;
+            }
         }
 
         .me {
             padding-right: 0;
-        }
-
-        .hamburger {
-            display: none;
         }
     }
 }
@@ -297,21 +297,6 @@ p {
 }
 
 @media screen and (min-width:480px) {
-
-    nav {
-
-        .burger {
-
-            .work,
-            .me {
-                display: none;
-            }
-
-            .hamburger {
-                display: flex;
-            }
-        }
-    }
 
     .description {
 

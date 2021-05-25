@@ -12,4 +12,4 @@
 # TECHNOLOGY COLOPHON
 
     CSS3, HTML5, SASS
-    JavaScript
+    JavaScript, Python, Django
