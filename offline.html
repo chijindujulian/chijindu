@@ -8,24 +8,66 @@
 
     <!--STYLESHEETS-->
     <link rel="stylesheet" href="scss/main.css" />
-
+    
     <!--GOOGLE FONTS-->
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Electrolize&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Maven+Pro:wght@400;500;600;700&display=swap" rel="stylesheet">
 
-    <title>Chijindu is offline</title>
+    <!--FAVICON-->
+    <link rel="icon" type="image/svg+xml" href="/images/icon.svg">
+
+    <title>Omoo, You are offline</title>
 
     <!-- inline the webpage's stylesheet -->
     <style>
-        
+        body {
+            height: 100vh;
+            background-color: #111;
+            color: #fff;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        h1 {
+            font-size: 64px;
+            padding: 2rem;
+        }
+
+        p {
+            font-size: 20px;
+            padding-bottom: 4rem;
+        }
+
+        button {
+            cursor: pointer;
+            border: 1px solid #fff;
+            color: #fff;
+            font-weight: 700;
+            background-color: transparent;
+            width: 7rem;
+            height: 3rem;
+        }
+
+        button:hover {
+            background-color: #fff;
+            color: #111;
+        }
     </style>
 </head>
 
 <body>
+        <h1>Offline mode active.</h1>
+
+        <p>Click the reload button to reload the page.</p>
 
 
+        <button>
+            Reload
+        </button>
 
-    
+
     <!-- inline the webpage's javascript file -->
     <script>
         document.querySelector("button").addEventListener("click", () => {

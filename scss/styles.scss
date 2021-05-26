@@ -14,8 +14,12 @@ html {
 
 a {
     text-decoration: none;
-    color: inherit;
+    color: none;
     font-family: 'Maven Pro', sans-serif;
+
+    &:focus {
+        background-color: none;
+    }
 }
 
 /*
@@ -187,7 +191,6 @@ p {
     row-gap: 6rem;
     justify-content: center;
     align-items: center;
-    height: 80vh;
     background-color: $primary-color;
     color: $light-color;
     border-top: 1px solid $accent-color;
@@ -250,7 +253,6 @@ p {
     }
 
     .about--links {
-        height: 80vh;
         display: flex;
         flex-direction: column;
         justify-content: center;
