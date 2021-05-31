@@ -57,10 +57,10 @@ self.addEventListener("fetch", (event) => {
 const chijindu = "chijindu-portfolio"
 const assets = [
     "/",
-    "index.html",
-    "about.html",
-    "work.html",
-    'offline.html',
+    "/index.html",
+    "/about.html",
+    "/work.html",
+    '/offline.html',
     "/scss/styles.css",
     "/scripts/script.js",
     "/images/circles.svg",
