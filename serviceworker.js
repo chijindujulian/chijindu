@@ -75,7 +75,6 @@ const assets = [
     "index.html",
     "about.html",
     "work.html",
-    "serviceworker.js",
     "/scss/styles.css",
     "/scripts/script.js",
     "/images/circles.svg",
