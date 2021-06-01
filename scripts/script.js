@@ -10,8 +10,3 @@ if ('serviceWorker' in navigator) {
             console.log('Service worker registration failed, error:', error);
         });
 }
-
-// EXECUTE SCROLL FUNCTION ON USER SCROLL
-window.onscroll = function() {
-	scrollFunction();
-};
