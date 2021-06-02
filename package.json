@@ -5,7 +5,7 @@
   "main": "serviceworker.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "watch": "sass --watch scss/styles.scss scsss/main.css"
+    "watch": "sass --watch scss/styles.scss scss/main.css"
   },
   "keywords": [],
   "author": "Chijindu Julian",

@@ -144,6 +144,7 @@ p {
   justify-content: center;
 }
 .work .work--container div {
+  border: solid 1px #fff;
   padding-bottom: 3rem;
 }
 .work .work--container div img {

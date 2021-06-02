@@ -13,12 +13,10 @@ a {
   color: inherit;
   font-family: "Maven Pro", sans-serif;
 }
-
-/*
-img {
-    max-width: 100%;
+a:focus {
+  background-color: none;
 }
-*/
+
 body {
   background-color: #fff;
   color: #1E1E1C;
@@ -127,7 +125,6 @@ p {
 .work {
   background-color: #1E1E1C;
   color: #fff;
-  text-align: center;
   padding: 0 1rem;
 }
 .work h2 {
@@ -138,27 +135,37 @@ p {
 }
 .work .work--container {
   display: grid;
-  justify-content: center;
+  place-items: center;
 }
-.work .work--container div {
+.work .work--container a {
+  color: inherit;
+}
+.work .work--container a div {
   padding-bottom: 3rem;
 }
-.work .work--container div img {
+.work .work--container a div img {
   padding-bottom: 1rem;
   max-width: 100%;
   max-height: 100%;
 }
-.work .work--container div p {
+.work .work--container a div h3 {
+  padding-bottom: 0.5rem;
+}
+.work .work--container a div p {
+  padding-bottom: 0.2rem;
   font-weight: 500;
+}
+.work .work--container a div .lang {
+  opacity: 0.8;
 }
 
 .build {
   display: flex;
   flex-direction: column;
+  padding: 10rem 0;
   row-gap: 6rem;
   justify-content: center;
   align-items: center;
-  height: 80vh;
   background-color: #1E1E1C;
   color: #fff;
   border-top: 1px solid #333;
@@ -206,17 +213,18 @@ p {
   line-height: 140%;
 }
 .about .about--links {
-  height: 80vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   border-top: 1px solid #333;
+  padding: 4rem 0;
 }
 .about .about--links h3 {
-  font-size: 30px;
+  font-size: 3rem;
+  opacity: 0.8;
   text-align: center;
-  padding: 3rem 0;
+  padding-bottom: 3rem;
 }
 .about .about--links .about--links-content {
   display: flex;
@@ -272,7 +280,7 @@ p {
     grid-template-columns: repeat(2, 2fr);
     column-gap: 1rem;
   }
-  .work .work--container div {
+  .work .work--container a div {
     padding-bottom: 8rem;
   }
 
