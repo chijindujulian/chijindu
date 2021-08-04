@@ -91,11 +91,13 @@ p {
   padding: 1rem;
   font-weight: 500;
   font-size: 1.2rem;
-  color: #fff;
-}
-.description .description--view_projects a:hover {
   background-color: #fff;
   color: #1E1E1C;
+  border-radius: 2px;
+}
+.description .description--view_projects a:hover {
+  background-color: #1E1E1C;
+  color: #fff;
   border-color: #333;
 }
 .description .description--skills {

@@ -101,11 +101,13 @@ p {
             padding: 1rem;
             font-weight: 500;
             font-size: 1.2rem;
-            color: $light-color;
+            background-color: $light-color;
+            color: $primary-color;
+            border-radius: 2px;
 
             &:hover {
-                background-color: $light-color;
-                color: $primary-color;
+                background-color: $primary-color;
+                color: $light-color;
                 border-color: $accent-color;
             }
         }
