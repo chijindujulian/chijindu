@@ -10,3 +10,9 @@ if ('serviceWorker' in navigator) {
             console.log('Service worker registration failed, error:', error);
         });
 }
+
+
+const locoScroll = new LocomotiveScroll({
+    el: document.querySelector(".smooth-scroll"),
+    smooth: true
+});
