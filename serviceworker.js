@@ -1,4 +1,4 @@
-let version = 'v1.1.2';
+let version = 'v2';
 
 const OFFLINE_VERSION = 1;
 const CACHE_NAME = "offline";
