@@ -9,13 +9,12 @@
     <meta name="theme-color" content="#111" />
 
     <!--STYLESHEETS-->
-    <link rel="stylesheet" href="scss/main.css" />
+    <link rel="preload" rel="stylesheet" href="scss/main.css" />
 
     <!--GOOGLE FONTS-->
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Maven+Pro:wght@400;500;600;700&display=swap" rel="stylesheet">
-
-
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@400;600&display=swap" rel="stylesheet">
 
     <!--WEB MANIFEST-->
     <link rel="manifest" href="/manifest.json" />
@@ -35,112 +34,178 @@
     <title>Chijindu Julian | My Work</title>
 
 
-    <!--Locomotive Scroll CSS-->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/locomotive-scroll@4.1.1/dist/locomotive-scroll.css">
+    <script rel="preload" src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.1/gsap.min.js"></script>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.1/gsap.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.1/ScrollTrigger.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@4.1.1/dist/locomotive-scroll.min.js"></script>
 </head>
 
+<body>
 
-    <header id="header">
+    <nav>
 
-        <nav>
+        <a href="/" class="logo">
 
-            <div class="logo">
-                <a href="/index.html" aria-label="logo">
-                    <img src="images/cj.svg" width="30" height="30" alt="logo">
-                </a>
+            <div class="logo--sigil">
+                <svg width="12" height="12" viewBox="0 0 8 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <g clip-path="url(#clip0)">
+                        <path d="M4 0.170837V7.82914" stroke="#333333" stroke-width="1.4" stroke-linecap="round"
+                            stroke-linejoin="round" />
+                        <path d="M5.9146 0.683838L2.08545 7.31612" stroke="#333333" stroke-width="1.4"
+                            stroke-linecap="round" stroke-linejoin="round" />
+                        <path d="M7.31636 2.08539L0.684082 5.91453" stroke="#333333" stroke-width="1.4"
+                            stroke-linecap="round" stroke-linejoin="round" />
+                        <path d="M7.82919 4H0.170898" stroke="#333333" stroke-width="1.4" stroke-linecap="round"
+                            stroke-linejoin="round" />
+                        <path d="M7.31636 5.91453L0.684082 2.08539" stroke="#333333" stroke-width="1.4"
+                            stroke-linecap="round" stroke-linejoin="round" />
+                        <path d="M5.9146 7.31612L2.08545 0.683838" stroke="#333333" stroke-width="1.4"
+                            stroke-linecap="round" stroke-linejoin="round" />
+                    </g>
+                    <defs>
+                        <clipPath id="clip0">
+                            <rect width="8" height="8" fill="white" />
+                        </clipPath>
+                    </defs>
+                </svg>
             </div>
 
-            <div class="burger">
+            <p>chijindujulian</p>
+        </a>
 
-                <a href="/work.html" class="work" aria-label="my-work">work</a>
+        <div class="main">
+            <div class="bars"></div>
+        </div>
 
-                <a href="/about.html" class="me" aria-label="about-me">me</a>
+        <div class="menu">
 
+            <div class=" navBefore">
+
+                <div class="nav-secondary">
+
+                    <ul class="navigation">
+                        <li class="">
+                            <a href="/"">
+                                home
+                            </a>
+                        </li>
+                        <li class="">
+                            <a href="/about.html"">
+                                about
+                            </a>
+                        </li>
+                        <li class="">
+                            <a href="/work.html">
+                                projects
+                            </a>
+                        </li>
+                        <li class="">
+                            <a href="#contact">
+                                contact
+                            </a>
+                        </li>
+                    </ul>
+
+                    
+                </div>
             </div>
+    
+        </div>
 
-        </nav>
+    </nav>
 
-    </header>
+    <section class="work">
 
-    <body>
+        <h2>
+            <span class="work--heading">Projects</span> <span class="work--icon">⚙️</span>
+        </h2>
 
-        <section class="work">
-
-            <h2>
-                <span>My Projects</span>
-            </h2>
-
-            <div class="work--container">
-
-                <a href="https://devkaizen.xyz" aria-label="project" rel="noopener" target="blank">
-                    <div>
-                        <img src="/images/blog.png" alt="blog" width="365" height="237">
-                        <h3>DevKaizen Blog</h3>
-                        <p>User Interface(UI) design</p>
-                        <p>Development</p>
-                        <p class="lang">HTML5 | CSS3 | JS | Hugo | Netlify</p>
-                    </div>
-                </a>
-
-                <a href="https://aldomconstruction.com" aria-label="project" rel="noopener" target="blank">
-                    <div>
-                        <img src="/images/waa.png" alt="" width="365" height="237">
-                        <h3>L.F.W Blog</h3>
-                        <p>User Interface design</p>
-                        <p> Full Stack Web Development</p>
-                        <p class="lang">HTML | CSS | JavaScript | Python | Django</p>
-                    </div>
-                </a>
-
-                <!--
-                    <a href="" aria-label="project" rel="noopener" target="blank">
-                    <div>
-                        <img src="/images/waa.png" alt="" width="365" height="237">
-                        <h3>L.F.W Blog</h3>
-                        <p>User Interface design</p>
-                        <p> Full Stack Web Development</p>
-                        <p class="lang">HTML | CSS | JavaScript | Python | Django</p>
-                    </div>
-                </a>
-
-                <a href="" aria-label="project" rel="noopener" target="blank">
-                    <div>
-                        <img src="/images/sca.png" alt="" width="365" height="237">
-                        <h3>L.F.W Blog</h3>
-                        <p>User Interface design</p>
-                        <p> Full Stack Web Development</p>
-                        <p class="lang">HTML | CSS | JavaScript | Python | Django</p>
-                    </div>
-                </a>
-                -->
-
-            </div>
-
-        </section>
-
-        <section class="build">
-
-            <h3>
-                Let's build an amazing experience together.
-            </h3>
+        <div class="work--container">
 
             <div>
-                <a href="mailto:chijindujulian@gmail.com" class="build--project" aria-label="mailbox">
-                    <span>
-                        Build Project
-                    </span>
+                <img src="/images/blog.png" alt="blog" width="365" height="237">
+
+                <a href="https://devkaizen.xyz" aria-label="project" rel="noopener" target="blank">
+                    <h3>DevKaizen Blog</h3>
                 </a>
+                <p>website, web app, UI, UX </p>
             </div>
-        </section>
 
-        <footer>
-            <p class="">© Chijindu Julian. 2021</p>
-        </footer>
+            <div>
+                <img src="/images/blog.png" alt="blog" width="365" height="237">
 
-    </body>
+                <a href="https://devkaizen.xyz" aria-label="project" rel="noopener" target="blank">
+                    <h3>DevKaizen Blog</h3>
+                </a>
+                <p>website, web app, UI, UX </p>
+            </div>
+
+            <div>
+                <img src="/images/blog.png" alt="blog" width="365" height="237">
+
+                <a href="https://devkaizen.xyz" aria-label="project" rel="noopener" target="blank">
+                    <h3>DevKaizen Blog</h3>
+                </a>
+                <p>website, web app, UI, UX </p>
+            </div>
+
+            <div>
+                <img src="/images/blog.png" alt="blog" width="365" height="237">
+
+                <a href="https://devkaizen.xyz" aria-label="project" rel="noopener" target="blank">
+                    <h3>DevKaizen Blog</h3>
+                </a>
+                <p>website, web app, UI, UX </p>
+            </div>
+
+        </div>
+
+    </section>
+
+    <section class="contact">
+        <h3>
+            <span class="contact--heading">
+                Get in touch with me by.
+            </span> 😊
+        </h3>
+
+        <div>
+            <a href="mailto:hello@chijindujulian.xyz" class="build--project" aria-label="mailbox">
+                <p>Email: 📥 hello@chijindujulian.xyz</p>
+            </a>
+        </div>
+
+        <p>Call: 📱 (+234) 703 225 1694</p>
+    </section>
+
+    <footer>
+        <div class="copyright">
+            Copyright © 2021 chijindujulian.xyz
+        </div>
+
+        <div class="social_icons">
+
+            <div class="behance">
+                <img src="/images/behance.svg" width="20" height="20" alt="link-to-behance" srcset="">
+            </div>
+
+            <div class="dribbble">
+                <img src="/images/dribbble.svg" width="20" height="20" alt="link-to-dribbble" srcset="">
+
+
+            </div>
+
+            <div class="github">
+                <img src="/images/github.svg" width="20" height="20" alt="link-to-github" srcset="">
+            </div>
+
+            <div class="twitter">
+                <img src="/images/twitter.svg" alt="link-to-twitter" srcset="">
+
+            </div>
+        </div>
+    </footer>
+
+    <script src="/scripts/script.js"></script>
+
+</body>
 
 </html>

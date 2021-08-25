@@ -12,15 +12,16 @@
     <link rel="stylesheet" href="scss/main.css" />
 
     <!--GOOGLE FONTS-->
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Maven+Pro:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@400;600&display=swap" rel="stylesheet">
 
-
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@400;600&display=swap" as="font" type="font/woff2" crossorigin>
 
     <!--WEB MANIFEST-->
     <link rel="manifest" href="/manifest.json" />
     <!-- include PWACompat _after_ your manifest -->
-    <script async src="https://unpkg.com/pwacompat" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/pwacompat" crossorigin="anonymous"></script>
 
     <!-- ios support -->
     <link rel="apple-touch-icon" href="images/icons/icon-144x144.png" />
@@ -34,38 +35,84 @@
 
     <title>Chijindu Julian | Front-end Engineer</title>
 
-    <!--Locomotive Scroll CSS-->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/locomotive-scroll@4.1.1/dist/locomotive-scroll.css">
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.1/gsap.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.1/ScrollTrigger.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@4.1.1/dist/locomotive-scroll.min.js"></script>
+
 </head>
 
-<div class="smooth-scroll">
-<header id="header">
+<body>
 
     <nav>
 
-        <div class="logo">
-            <a href="/index.html" aria-label="logo">
-                <img src="images/cj.svg" width="30" height="30" alt="logo">
-            </a>
+        <a href="/" class="logo">
+
+            <div class="logo--sigil">
+                <svg width="12" height="12" viewBox="0 0 8 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <g clip-path="url(#clip0)">
+                        <path d="M4 0.170837V7.82914" stroke="#333333" stroke-width="1.4" stroke-linecap="round"
+                            stroke-linejoin="round" />
+                        <path d="M5.9146 0.683838L2.08545 7.31612" stroke="#333333" stroke-width="1.4"
+                            stroke-linecap="round" stroke-linejoin="round" />
+                        <path d="M7.31636 2.08539L0.684082 5.91453" stroke="#333333" stroke-width="1.4"
+                            stroke-linecap="round" stroke-linejoin="round" />
+                        <path d="M7.82919 4H0.170898" stroke="#333333" stroke-width="1.4" stroke-linecap="round"
+                            stroke-linejoin="round" />
+                        <path d="M7.31636 5.91453L0.684082 2.08539" stroke="#333333" stroke-width="1.4"
+                            stroke-linecap="round" stroke-linejoin="round" />
+                        <path d="M5.9146 7.31612L2.08545 0.683838" stroke="#333333" stroke-width="1.4"
+                            stroke-linecap="round" stroke-linejoin="round" />
+                    </g>
+                    <defs>
+                        <clipPath id="clip0">
+                            <rect width="8" height="8" fill="white" />
+                        </clipPath>
+                    </defs>
+                </svg>
+            </div>
+
+            <p>chijindujulian</p>
+        </a>
+
+        <div class="main">
+            <div class="bars"></div>
         </div>
 
-        <div class="burger">
-            
-            <a href="/work.html" class="work" aria-label="my-work">work</a>
+        <div class="menu">
 
-            <a href="/about.html" class="me"  aria-label="about-me">me</a>
+            <div class=" navBefore">
+
+                <div class="nav-secondary">
+
+                    <ul class="navigation">
+                        <li class="">
+                            <a href="/">
+                                home
+                            </a>
+                        </li>
+                        <li class="">
+                            <a href="/about.html">
+                                about
+                            </a>
+                        </li>
+                        <li class="">
+                            <a href="/work.html">
+                                projects
+                            </a>
+                        </li>
+                        <li class="">
+                            <a href="#contact">
+                                contact
+                            </a>
+                        </li>
+                    </ul>
+
+
+                </div>
+            </div>
 
         </div>
 
     </nav>
-
-</header>
-
-<body class="index">
 
     <main class="description">
 
@@ -75,14 +122,17 @@
                 <img src="/images/circles.svg" alt="circles" width="56" height="53">
             </div>
 
-            <p class="description--hello">Hi, I'm</p>
-            <h1>Chijindu Julian.</h1>
-            <p class="description--skills">Front-end Software Engineer</p>
+            <p class="description--hello">Hey there 👋🏾, I'm</p>
+            <h1> <span class="description--first-name">Chijindu </span><br> Julian.</h1>
+            <p class="description--skills">
+                I design, build & maintain blazing fast websites & beautiful digital
+                products that help solve your business needs and challenges.
+            </p>
 
             <div class="description--view_projects">
                 <a href="/work.html" aria-label="my-work">
                     <span>
-                        View my work
+                        view my work
                     </span>
                 </a>
             </div>
@@ -93,10 +143,167 @@
 
         </div>
 
+        <p class="scroll-text">Scroll down</p>
+
     </main>
+
+    <section class="info">
+        <div class="info--content">
+            <h2>I am...</h2>
+            <p>
+                ...Chijindu, a UI designer, front-end engineer and tinkerer of things that inspire my curiousity.I
+                love utilizing minimalism as a design style when creating UIs. I create front-end solutions for web3
+                startups, small and medium enterprises(SMEs) etc. My core technologies for building tech products are:
+
+            </p>
+            <p>
+                UI Design - Figma <br>
+                Web Development - HTML, CSS(SCSS), JavaScript <br>
+                Frameworks - React
+            </p>
+            <p>
+                You can learn more about me and see latest project updates on Twitter.
+            </p>
+        </div>
+    </section>
+
+    <section class="featured">
+
+        <div class="featured--content">
+            <h2><span class="featured--heading">
+                    See my featured work
+                </span> 💻</h2>
+
+            <div class="featured--projects-container">
+
+                <div>
+                    <img src="/images/blog.png" alt="blog" width="365" height="237">
+                    <h3>
+                        <a href="https://devkaizen.xyz" aria-label="project" rel="noopener" target="blank">
+                            DevKaizen Blog
+                        </a>
+                    </h3>
+                    <p>website, web app, UI, UX</p>
+                </div>
+
+                <div>
+                    <img src="/images/blog.png" alt="blog" width="365" height="237">
+                    <h3>
+                        <a href="https://devkaizen.xyz" aria-label="project" rel="noopener" target="blank">
+                            DevKaizen Blog
+                        </a>
+                    </h3>
+                    <p>website, web app, UI, UX</p>
+                </div>
+
+                <div>
+                    <img src="/images/blog.png" alt="blog" width="365" height="237">
+                    <h3>
+                        <a href="https://devkaizen.xyz" aria-label="project" rel="noopener" target="blank">
+                            DevKaizen Blog
+                        </a>
+                    </h3>
+                    <p>website, web app, UI, UX</p>
+                </div>
+
+                <div>
+                    <img src="/images/blog.png" alt="blog" width="365" height="237">
+                    <h3>
+                        <a href="https://devkaizen.xyz" aria-label="project" rel="noopener" target="blank">
+                            DevKaizen Blog
+                        </a>
+                    </h3>
+                    <p>website, web app, UI, UX</p>
+                </div>
+
+            </div>
+
+            <div class="featured--btn">
+                <a href="/work.html" class="view-projects">
+                    view all projects
+                </a>
+            </div>
+
+        </div>
+    </section>
+
+    <!--
+        <section class="articles">
+        
+        <div class="articles--content">
+            <h2>Articles i have written 📝.</h2>
+
+            <div class="articles--container">
+
+                <article class="articles--link">
+                    
+                    <h3>Article Title</h3>
+
+                    <div class="articles--meta">
+
+                        <time datetime="2021-07-20" class="date">20 July, 2021</time>
+
+                        <ul>
+                            <li>PWA</li>
+                            <li>JavaScript</li>
+                        </ul>
+
+                    </div>
+
+                </article>
+
+            </div>
+        </div>
+
+
+    </section>
+    -->
+
+    <section class="contact">
+        <h3>
+            <span class="contact--heading">
+                Get in touch with me by.
+            </span> 😊
+        </h3>
+
+        <div>
+            <a href="mailto:hello@chijindujulian.xyz" class="build--project" aria-label="mailbox">
+                <p>Email: 📥 hello@chijindujulian.xyz</p>
+            </a>
+        </div>
+
+        <p>Call: 📱 (+234) 703 225 1694</p>
+    </section>
+
+    <footer>
+        <div class="copyright">
+            Copyright © 2021 chijindujulian.xyz
+        </div>
+
+        <div class="social_icons">
+
+            <div class="behance">
+                <img src="/images/behance.svg" width="20" height="20" alt="link-to-behance" srcset="">
+            </div>
+
+            <div class="dribbble">
+                <img src="/images/dribbble.svg" width="20" height="20" alt="link-to-dribbble" srcset="">
+
+
+            </div>
+
+            <div class="github">
+                <img src="/images/github.svg" width="20" height="20" alt="link-to-github" srcset="">
+            </div>
+
+            <div class="twitter">
+                <img src="/images/twitter.svg" alt="link-to-twitter" srcset="">
+
+            </div>
+        </div>
+    </footer>
 
     <script src="/scripts/script.js"></script>
 </body>
-</div>
 
 </html>

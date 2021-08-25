@@ -1,0 +1,16 @@
+Rule 0 : Always keep it as minimal & simple as possible.
+
+Rule 1 : Always favor the decision that compounds more productively in the long term.
+
+Naming Conventions : BEM methodology for CSS
+
+Semantic HTML
+
+Bear in mind Principles of usability
+
+Implement animations : preferably animations on svg illustrations, scroll animations, parallax effect effect
+
+May your animations always servve the purpose of complimenting the story being told
+
+Always keep it as simple and minimal as possible, always.
+
