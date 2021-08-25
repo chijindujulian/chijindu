@@ -173,10 +173,10 @@ p {
 }
 
 .description {
-  padding: 2rem 0;
+  padding: 2rem 0 3rem;
 }
 .description .description--view_projects {
-  margin-top: 3rem;
+  margin: 3rem 0;
   width: 100%;
 }
 .description .description--view_projects a {
@@ -198,6 +198,7 @@ p {
 }
 .description .description--skills {
   padding: 2rem 0;
+  padding-bottom: 3rem;
   line-height: 1.4;
 }
 .description .img, .description .circles {
