@@ -64,13 +64,12 @@ const assets = [
     "scripts/script.js",
     "images/circles.svg",
     "images/cj.svg",
-    "images/hamburgerx.svg",
+    "images/behance.svg",
+    "images/github.svg",
+    "images/dribbble.svg",
+    "images/twitter.svg",
     "images/hox.svg",
     "images/icon.svg",
-    "images/chijindu1.webp",
-    "images/sca.png",
-    "images/waa.png",
-    'images/offlines.svg',
 ]
 
 self.addEventListener("install", installEvent => {
