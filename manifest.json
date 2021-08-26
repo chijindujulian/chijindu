@@ -26,10 +26,10 @@
       "purpose": "any maskable"
     }
   ],
-  "start_url": "https://chijindujulian.netlify.app/index.html",
+  "start_url": "https://chijindujulian.xyz/index.html",
   "display": "standalone",
   "background_color": "#111",
   "theme_color": "#111",
-  "scope": "https://chijindujulian.netlify.app/",
+  "scope": "https://chijindujulian.xyz/",
   "orientation": "portrait-primary"
 }
